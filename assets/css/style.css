@@ -42,9 +42,12 @@ footer{
   justify-content: center;
 }
 
-footer div a::before {
-  content: attr(data-foo);
+.fa {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
+
 
 nav ul li {
   display: inline;
@@ -242,7 +245,7 @@ height: 80px;
   }
 
   nav ul li {
-    padding: 5px 10px;
+    padding: 5px 0px;
   }
   
   section {
