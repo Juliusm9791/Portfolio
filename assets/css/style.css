@@ -20,7 +20,7 @@ header {
 
 #hName {
 padding: 5px 30px;
-background-color: orangered;
+background-color: var(--backColor3);
 }
  
 header, footer {
@@ -36,7 +36,7 @@ header, footer {
 }
 
 footer{
-  background-color: var(--overColor);
+  background-color: var(--backColor1);
   position: relative;
   top: 600px;
   text-align: center;
@@ -49,8 +49,12 @@ footer div a::before {
 
 nav ul li {
   display: inline;
+}
+
+#navColor1, #navColor2, #navColor3 {
   text-decoration: none;
   padding: 5px 30px;
+  color: white;
 }
 
 .topBack {
@@ -85,7 +89,7 @@ main {
 
 section {
   display: inline-flex;
-  background-color: #f8f9fa;;
+  background-color: #f8f9fa;
 }
 
 aside {
@@ -116,7 +120,7 @@ aside {
   background-color: var(--backColor3);
 }
 
-#aboutMe, #fotmContact {
+#aboutMe, #formContact {
   display: block;
 }
 
@@ -124,7 +128,7 @@ aside {
   display: flex;
 }
 
-#aboutMe, #portfolioPic, #fotmContact {
+#aboutMe, #portfolioPic, #formContact {
   flex: 4;
   scroll-margin-top: 70px;
   flex-wrap: wrap;
@@ -191,7 +195,7 @@ aside {
     padding: 15px;
     margin: 15px;
   }
-  #aboutMe, #portfolioPic, #fotmContact {
+  #aboutMe, #portfolioPic, #formContact {
      scroll-margin-top: 200px;
   }
 
