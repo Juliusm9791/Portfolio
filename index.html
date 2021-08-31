@@ -9,43 +9,43 @@
 <body>
     <header>
         <div id="hName"><h1>Julius</h1></div>
-
         <nav>
             <ul>
                 <li>
-                    <a id="navColor1" href="#aboutMe">About Me</a> 
+                    <a id="navAbou" href="#sectionAbou">About Me</a> 
                 </li>
                 <li>
-                    <a id="navColor2" href="#portfolio">Portfolio</a> 
+                    <a id="navPort" href="#sectionPort">Portfolio</a> 
                 </li>
                 <li>
-                    <a id="navColor3" href="#contactForm">Contact&nbspMe</a> 
+                    <a id="navCont" href="#sectionCont">Contact&nbspMe</a> 
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="topBack"></div>
+
+    <div class="topBackPic"></div>
     
     <main>
         <div class="timeBox"> 
-           <p id="date"> Todays is</p><!-- 
+           <p id="date"> Today is <br> A good day</p><!-- 
             <script>
                 document.getElementById("date").innerHTML = Date();
             </script>-->
         </div>
-        <section>
-            <aside>
-                <div id="colorBox1"><h1>About Me</h1></div>
+        <section id="sectionAbou">
+            <aside id= "asideAbou">
+                <h1>About Me</h1>
             </aside>
-            <article id="aboutMe">
+            <article id="articleAbou">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ea porro optio, nobis incidunt dolore assumenda omnis error in dicta harum, quaerat iure labore, possimus numquam est quis minus magnam.</p>
             </article>
         </section>
-        <section id="portfolio">
-            <aside>
-                <div id="colorBox2"><h1>Portfolio</h1></div>
+        <section id="sectionPort">
+            <aside id= "asidePort">
+                <h1>Portfolio</h1>
             </aside>
-            <article id="portfolioPic">
+            <article id="articlePort">
                 <div>
                     <a class="comingSoon" href="#https://www.comingsoon.com/"><img src="./assets/images/coming-soon-2550190_1280.jpg" alt="Coming soon"></a>
                 </div>
@@ -66,27 +66,36 @@
                 </div>
             </article>
         </section>
-        <section id="contactForm">
-            <aside>
-                <div id="colorBox3"><h1>Contact Me</h1></div>
+        <section id="sectionCont">
+            <aside id= "asideCont">
+                <h1>Contact Me</h1>
             </aside>
-            <article id="formContact">
-                <form action=""></form>
-                    <label for="fullName">Full Name: </label>
-                    <input type="text" name="Full Name" id="fullName"><br><br>
-                    <label for="email">E-mail: </label>
-                    <input type="email" name="Full Name" id="email"><br><br>
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" name="Full Name" id="addInfiText"><br><br>
-                    <label for="fullName">Full Name:</label>
-                    <input type="submit" name="Full Name" id="submit1">
+            <article id="articleCont">
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="fullName">Your Full Name: </label>
+                            <input type="text" name="Full Name" id="fullName">
+                        </li>
+                        <li>
+                            <label for="email">Your E-mail: </label>
+                            <input type="email" name="E-mail" id="email">
+                        </li>
+                        <li>
+                            <label for="message">Message:</label>
+                            <textarea type="text" name="message"></textarea>
+                        </li>
+                        <li>
+                            <button type="submit" id="submit"></button>
+                        </li>
+                    </ul>
                 </form>
             </article>
         </section>
     </main>
     <footer>
         <div>
-            <p>Julius Markauskas</p>
+            <p>© Julius Markauskas</p>
         </div>
         <div>
             <a href="https://www.linkedin.com/in/julius-markauskas-795aa0103">LinkedIn</a>
