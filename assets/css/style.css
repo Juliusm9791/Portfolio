@@ -81,7 +81,7 @@ main {
   width: 100%;
 }
 
-.timeBox {
+#timeBox {
   position: relative;
   top: -150px;
   left: 60%;
@@ -203,12 +203,33 @@ height: 80px;
   background-color: var(--backColor3);
   border: none;
   color: white;
+  box-shadow: inset 0px 0px 5px black;
+  border-radius: 10px;
 }
 #buttonCont:hover {
   background-color: #43a8dc;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 820px) {
+/* Large devices  992px */
+@media screen and (max-width: 992px) {
+
+  #timeBox {
+    top: -80px;
+    left: 55%;
+    width: 350px;
+    height: 200px;
+}
+
+#sectionCont {
+  text-align: center;
+}
+#buttonCont {
+    margin-left: 5px;
+}
+
+/* Medium devices 768px */
+@media screen and (max-width: 768px) {
 
   header {
     display: block;
@@ -263,4 +284,9 @@ height: 80px;
   .comingSoon img {
     width: 250px;
   }
+
+  #timeBox {
+    display: none;
+  }
+
 }
