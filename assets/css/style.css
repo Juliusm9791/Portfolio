@@ -18,6 +18,8 @@ header {
 }
 
 #navName {
+  position: relative;
+  z-index: -1;
   padding: 5px 30px;
   color: white;
   font-size: 14px;
@@ -236,14 +238,14 @@ height: 80px;
   }
 
 /*               Animations */
-#asidePort h1, #asideCont h1, #asideAbou h1 {
-  animation-duration: 2s;
+#navName {
+  animation-duration: 4s;
   animation-name: moveup;
 }
 
 @keyframes moveup {
   from {
-    left: -500px;
+    left: 600px;
        }
 
   to {
