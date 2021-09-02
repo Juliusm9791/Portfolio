@@ -17,9 +17,10 @@ header {
   left: 0px;
 }
 
-#hName {
-padding: 5px 30px;
-background-color: var(--backColor3);
+#navName {
+  padding: 5px 30px;
+  color: white;
+  font-size: 14px;
 }
  
 header, footer {
@@ -30,7 +31,8 @@ header, footer {
   z-index: 2;
 }
 
-#hName h1 {
+#navName h1 {
+  font-family: cursive;
   margin: 0px;  
 }
 
@@ -108,10 +110,10 @@ main {
   color: white;
 }
 
-#date{
+#timeBox p {
   font-family: cursive;
   font-size: 30px;
-  padding: 20px;
+  padding: 5px;
   margin: 5px;
   line-height: 2;
   text-align: center;
