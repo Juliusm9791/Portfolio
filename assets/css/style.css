@@ -233,9 +233,9 @@ height: 80px;
   cursor: pointer;
 }
 
-#asidePort h1, #asideCont h1, #asideAbou h1 {
+/* #asidePort h1, #asideCont h1, #asideAbou h1 {
   position: relative;
-  }
+  } */
 
 /*               Animations */
 #navName {
@@ -258,9 +258,10 @@ height: 80px;
 
   #timeBox {
     top: -80px;
-    left: 55%;
-    width: 350px;
-    height: 200px;
+    left: 10%;
+    width: 300px;
+    height: 170px;
+    padding: 5px;
   }
 
   #sectionCont {
@@ -322,20 +323,9 @@ height: 80px;
     border-bottom: 20px solid var(--backColor3);
     border-right: none;
   }
-
-  /* #articleAbou, #articlePort, #articleCont {
-    scroll-margin-top: 200px;
-  } */
-  
+sc  
   #articlePort div a img {
     width: 350px;
-  }
-
-  #timeBox {
-    left: 10%;
-    width: 300px;
-    height: 170px;
-    padding: 5px;
   }
 
 }

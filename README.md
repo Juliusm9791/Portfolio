@@ -1,8 +1,19 @@
-# 02-Advanced-CSS-Portfolio
+# 02-Advanced-CSS-Portfolio Homework
+
+On click one of the links in the navigation it scrolls to the corresponding section.
+With the mouse over application, that application's image become larger in size than the others.
+Click on the images of the applications and it takes to that deployed application.
+When resize the page or view the site on various screens and devices it changes layout that adapts to screen size.
 
 
+## Link to website
+https://juliusm9791.github.io/02-Advanced-CSS-Portfolio/
 
-### CSS reset 
+## Mock-Up
+The following picture shows web application:
+(./assets/images/mock-up.jpg)
+
+### CSS reset file
 
 https://necolas.github.io/normalize.css/
 
