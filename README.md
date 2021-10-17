@@ -10,7 +10,7 @@ When resize the page or view the site on various screens and devices it changes 
 
 
 ## Link to website
-https://juliusm9791.github.io/02-Advanced-CSS-Portfolio/
+https://juliusm9791.github.io/Portfolio/
 
 ## Mock-Up
 The following picture shows web application:

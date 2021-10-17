@@ -33,10 +33,10 @@
         <div id="timeBox"> 
            <p>Today is:</p>
            <p id="date">A good day!</p> 
-            <!-- <script>
+            <script>
                 let dt = new Date();
                 document.getElementById("date").innerHTML = (dt.getMonth() + 1) + "/" + dt.getDate() + "/" +dt.getFullYear();
-            </script> -->
+            </script>
         </div>
 <!-- Section about  -->
         <section id="sectionAbou">
@@ -45,6 +45,14 @@
             </aside>
             <article id="articleAbou">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ea porro optio, nobis incidunt dolore assumenda omnis error in dicta harum, quaerat iure labore, possimus numquam est quis minus magnam.</p>
+                <div>
+                    <div class="linkTo">
+                        <a id="resume" href="">Link to resume</a>
+                    </div>
+                    <div class="linkTo">
+                        <a class="fa" href="https://www.linkedin.com/in/julius-markauskas-795aa0103">&#xf08c LinkedIn</a>
+                    </div>
+                </div>
             </article>
         </section>
 <!-- Section portfolio -->
@@ -53,30 +61,7 @@
                 <h1>Portfolio</h1>
             </aside>
             <article id="articlePort">
-                <div>
-                    <a href="https://juliusm9791.github.io/Mini-Project/"><img src="./assets/images/Mini-project.JPG" alt="Mini-Project"></a>
-                    <p>Mini Project</p>
-                </div>
-                <div>
-                    <a href="https://juliusm9791.github.io/Rock-Paper-Scissors/"><img src="./assets/images/RPS.JPG" alt="Rock Paper Scissors"></a>
-                    <p>Rock Paper Scissors</p>
-                </div>
-                <div>
-                    <a href="#https://www.comingsoon.com/"><img src="./assets/images/coming-soon-2550190_1280.jpg" alt="Coming soon"></a>
-                    <p>Comming Soon</p>
-                </div>
-                <div>
-                    <a href="#https://www.comingsoon.com/"><img src="./assets/images/coming-soon-2550190_1280.jpg" alt="Coming soon"></a>
-                    <p>Comming Soon</p>
-                </div>
-                <div>
-                    <a  href="#https://www.comingsoon.com/"><img src="./assets/images/coming-soon-2550190_1280.jpg" alt="Coming soon"></a>
-                    <p>Comming Soon</p>
-                </div>
-                <div>
-                    <a href="#https://www.comingsoon.com/"><img src="./assets/images/coming-soon-2550190_1280.jpg" alt="Coming soon"></a>
-                    <p>Comming Soon</p>
-                </div>
+      
             </article>
         </section>
 <!-- Section contact form -->
@@ -113,5 +98,8 @@
             <a class="fa" href="https://www.linkedin.com/in/julius-markauskas-795aa0103">&#xf08c LinkedIn</a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='./assets/js/main.js'></script>
 </body>
 </html>
