@@ -15,7 +15,10 @@ function linksToPages(response) {
       let div = $('<div>');
       let titleName = fixTitleName(response[i].name);
       let imageLink =  `./assets/images/${response[i].name}.jpg`;
-      div.append($(`<a href="https://juliusm9791.github.io/${response[i].name}/"><img src="${imageLink}" alt="${titleName}"></a>`)); 
+      let image = new Image();
+      image.src = imageLink;
+      image.alt = titleName;
+      div.append($(`<a href="https://juliusm9791.github.io/${response[i].name}/"/a>`).append(image)); 
       div.append($('<p>').text(titleName));
       $('#articlePort').append(div);
     }

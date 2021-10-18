@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset='utf-8'>
     <title>JM Portfolio</title>
     <link rel="icon" href="./assets/images/title.png">
-    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/normalize.css'> 
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/normalize.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css'>
 </head>
+
 <body>
-<!-- Header and navigation -->
+    <!-- Header and navigation -->
     <header>
-        <div id="navName"><h1>Hi, I'm Julius </h1></div>
+        <div id="navName">
+            <h1>Hi, I'm Julius Markauskas</h1>
+        </div>
         <nav>
             <ul>
                 <li>
-                    <a id="navAbou" href="#sectionAbou">About Me</a> 
+                    <a id="navAbou" href="#sectionAbou">About Me</a>
                 </li>
                 <li>
-                    <a id="navPort" href="#sectionPort">Portfolio</a> 
+                    <a id="navPort" href="#sectionPort">Portfolio</a>
                 </li>
                 <li>
-                    <a id="navCont" href="#sectionCont">Contact&nbspMe</a> 
+                    <a id="navCont" href="#sectionCont">Contact&nbspMe</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <div class="topBackPic"></div>
-    
+
     <main>
-        <div id="timeBox"> 
-           <p>Today is:</p>
-           <p id="date">A good day!</p> 
+        <div id="timeBox">
+            <p>Today is:</p>
+            <p id="date">A good day!</p>
             <script>
                 let dt = new Date();
-                document.getElementById("date").innerHTML = (dt.getMonth() + 1) + "/" + dt.getDate() + "/" +dt.getFullYear();
+                document.getElementById("date").innerHTML = (dt.getMonth() + 1) + "/" + dt.getDate() + "/" + dt.getFullYear();
             </script>
         </div>
-<!-- Section about  -->
+        <!-- Section about  -->
         <section id="sectionAbou">
-            <aside id= "asideAbou">
+            <aside id="asideAbou">
                 <h1>About Me</h1>
             </aside>
             <article id="articleAbou">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ea porro optio, nobis incidunt dolore assumenda omnis error in dicta harum, quaerat iure labore, possimus numquam est quis minus magnam.</p>
+                <p>I am a <strong> Senior Digital Field Engineer</strong> at M&R company. Currently studying at Georgia Tech.
+                    coding boot camp. I have a master’s degree in computer science at Kaunas University of Technology. </p>
+                <p>I am a dependable person who is great at time management. With broad skills and experience in service
+                    and service management, digital printing, and digital publishing. I am always energetic and eager to
+                    learn new skills.</p>
+
                 <div>
                     <div class="linkTo">
-                        <a id="resume" href="">Link to resume</a>
+                        <a class="fa" id="resume" href="">&#xf1c1 Resume</a>
                     </div>
                     <div class="linkTo">
-                        <a class="fa" href="https://www.linkedin.com/in/julius-markauskas-795aa0103">&#xf08c LinkedIn</a>
+                        <a class="fa" href="https://www.linkedin.com/in/julius-markauskas-795aa0103"
+                            target="_blank">&#xf08c LinkedIn</a>
+                    </div>
+                    <div class="linkTo">
+                        <a class="fa" href="https://github.com/Juliusm9791" target="_blank">&#xf09b GitHub</a>
                     </div>
                 </div>
             </article>
         </section>
-<!-- Section portfolio -->
+        <!-- Section portfolio -->
         <section id="sectionPort">
-            <aside id= "asidePort">
+            <aside id="asidePort">
                 <h1>Portfolio</h1>
             </aside>
             <article id="articlePort">
-      
+
             </article>
         </section>
-<!-- Section contact form -->
+        <!-- Section contact form -->
         <section id="sectionCont">
-            <aside id= "asideCont">
+            <aside id="asideCont">
                 <h1>Contact Me</h1>
             </aside>
             <article id="articleCont">
@@ -83,13 +96,13 @@
                         <label for="message">Message:</label><br>
                         <textarea type="text" name="message" id="message"></textarea>
                     </p class="alignRight">
-                        <button type="submit" id="buttonCont">Send Message</button>
+                    <button type="submit" id="buttonCont">Send Message</button>
                     </p>
                 </form>
             </article>
         </section>
     </main>
-<!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div>
             <p>© Julius Markauskas&nbsp&nbsp</p>
@@ -102,4 +115,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='./assets/js/main.js'></script>
 </body>
+
 </html>
