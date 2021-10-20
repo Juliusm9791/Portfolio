@@ -18,8 +18,9 @@ function linksToPages(response) {
       let image = new Image();
       image.src = imageLink;
       image.alt = titleName;
-      div.append($(`<a href="https://juliusm9791.github.io/${response[i].name}/"/a>`).append(image)); 
-      div.append($('<p>').text(titleName));
+      console.log(response[i].html_url)
+      div.append($(`<a href="https://juliusm9791.github.io/${response[i].name}/" target="_blank"></a>`).append(image)); 
+      div.append($(`<a class="fa titleName" href="${response[i].html_url}" target="_blank">&#xf09b ${titleName}</a>`));
       $('#articlePort').append(div);
     }
   }

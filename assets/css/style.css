@@ -144,12 +144,15 @@ aside h1 {
   font-size: 16px;
   box-shadow: 0px 0px 8px white;
   border-radius: 5px;
-   }
+}
 
-  .linkTo a {
-    color: white;
-    text-decoration: none;
-  }
+.linkTo a {
+  color: white;
+  text-decoration: none;
+}
+.linkTo:hover {
+  background-color: #a8db10
+}
 
 #asideAbou {
   border-right: 20px solid var(--backColor1);
@@ -205,21 +208,26 @@ aside h1 {
   transition: 1s;
 }
 
-#articlePort div p {
+.titleName {
   position: relative;
+  display: block;
   color: white;
-  width: 50%;
+  max-width: 50%;
   background-color: var(--backColor2);
   font-size: 16px;
   padding: 10px;
-  bottom: 64px;
-  right: -195px;
+  bottom: 48px;
+  right: -4px;
   text-align: center;
   box-shadow: 0px 0px 8px white;
   border-radius: 5px;
 }
 
- /*              Contact section */
+.titleName:hover {
+  background-color: #dc7743;
+}
+
+/*              Contact section */
 form {
   margin-left: 30px ;
 }
@@ -252,10 +260,6 @@ height: 80px;
   background-color: #43a8dc;
   cursor: pointer;
 }
-
-/* #asidePort h1, #asideCont h1, #asideAbou h1 {
-  position: relative;
-  } */
 
 /*               Animations */
 #navName {
@@ -335,8 +339,10 @@ height: 80px;
     border-right: none;
   }
 
-  #articlePort div p {
-    right: -169px;
+  .titleName {
+    display: block;
+    left: 6px;
+    top: -48px;
   }
   
   #asideCont {
@@ -346,21 +352,8 @@ height: 80px;
   #articlePort {
     justify-content: space-evenly;
   }
-  
-  #articlePort div a img {
-    width: 350px;
-  }
 
   #articleAbou div {
     justify-content: space-evenly;
   }
 }
-
-/* 
-.thumbnail-container {
-  width: calc(1440px * 0.25);
-  height: calc(900px * 0.25);
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-} */

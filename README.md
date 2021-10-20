@@ -1,20 +1,22 @@
-# 02-Advanced-CSS-Portfolio Homework
+# Julius Markauskas Portfolio
 
-On click one of the links in the navigation, it scrolls to the corresponding section.
-
-With the mouse over application, that application's image become larger in size than the others.
-
-Click on the images of the applications and it takes to that deployed application.
-
-When resize the page or view the site on various screens and devices it changes layout that adapts to screen size.
-
+You will find: 
+About Me, Resume, LinkedIn, and GitHub.
+Latest projects. 
+Contact information.
 
 ## Link to website
 https://juliusm9791.github.io/Portfolio/
 
 ## Mock-Up
 The following picture shows web application:
-![Mock-Up image](./assets/images/mock-up.jpg)
+![Mock-Up image](./assets/images/mock-up2.jpg)
+
+## Technologies used
+Java Script
+HTML
+CSS
+API
 
 ### CSS reset file
 
