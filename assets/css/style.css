@@ -249,7 +249,7 @@ height: 80px;
 #buttonCont {
   width: 200px;
   height: 40px;
-  margin-left: 55px;
+  margin-left: 10px;
   background-color: var(--backColor3);
   border: none;
   color: white;
@@ -259,6 +259,14 @@ height: 80px;
 #buttonCont:hover {
   background-color: #43a8dc;
   cursor: pointer;
+}
+
+.contact{
+margin: 10px 0px 0px 10px;
+background-color: var(--backColor3);
+}
+.contact:hover{
+  background-color: #43a8dc;
 }
 
 /*               Animations */
