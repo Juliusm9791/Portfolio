@@ -1,8 +1,11 @@
 # Julius Markauskas Portfolio
 
 You will find: 
+
 About Me, Resume, LinkedIn, and GitHub.
+
 Latest projects. 
+
 Contact information.
 
 ## Link to website
@@ -14,8 +17,11 @@ The following picture shows web application:
 
 ## Technologies used
 Java Script
+
 HTML
+
 CSS
+
 API
 
 ### CSS reset file
