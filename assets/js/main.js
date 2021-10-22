@@ -11,7 +11,7 @@ $.ajax({
 
 function linksToPages(response) {
   for (let i = 0; i < requestUrl.length; i++) {
-    if (response[i].name !== "Portfolio" && response[i].name !== "prework-about-me") {
+    if (response[i].name !== "Portfolio" && response[i].name !== "prework-about-me" && response[i].name !== "Readme_Generator") {
       let div = $('<div>');
       let titleName = fixTitleName(response[i].name);
       let imageLink =  `./assets/images/${response[i].name}.jpg`;
