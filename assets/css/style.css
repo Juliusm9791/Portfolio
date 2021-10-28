@@ -369,17 +369,20 @@ background-color: var(--backColor3);
     font-size: 25px;
   }
   #buttonCont {
-    width: 80%;
+    width: 50%;
     font-size: 25px;
   }
   #fullName, #email, #message {
     font-size: 20px;
-    width: auto;
+    width: 50%;
   }
   #articleCont form{
     margin: 0px;
   }
   #articleCont form p label{
+    font-size: 25px;
+  }
+  footer div p {
     font-size: 25px;
   }
 }
@@ -402,6 +405,20 @@ background-color: var(--backColor3);
   #timeBox {
     display: none;
   }
-
+  .topBackPic {
+    height: 0;
+    background-image: none;
+  }
+  main, footer {
+    top: 0px;
+  }
+  #buttonCont {
+    width: 80%;
+    min-height: 40px;
+    height: auto;
+  }
+  #fullName, #email, #message {
+    width: 80%;
+  }
 }
 
