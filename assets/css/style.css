@@ -194,6 +194,10 @@ aside h1 {
   justify-content: flex-start;
 }
 
+/* #articlePort div {
+ display: flexbox;
+} */
+
 #articlePort div a img {
   transition: 1s;
   border: 5px solid white;
@@ -345,8 +349,9 @@ background-color: var(--backColor3);
 
   .titleName {
     display: block;
-    left: 6px;
-    top: -48px;
+    left: 34px;
+    top: -56px;
+    max-width: 80%;
   }
   
   #asideCont {
