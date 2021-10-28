@@ -382,11 +382,6 @@ background-color: var(--backColor3);
   #articleCont form p label{
     font-size: 25px;
   }
-  #articlePort div {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
 }
 
 
