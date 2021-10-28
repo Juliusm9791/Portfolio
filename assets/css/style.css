@@ -302,10 +302,6 @@ background-color: var(--backColor3);
   #buttonCont {
     margin-left: 5px;
   }
- /* } */
-
-/* Medium devices 768px */
- /* @media screen and (max-width: 768px) {  */
 
   header {
     display: block;
@@ -364,4 +360,53 @@ background-color: var(--backColor3);
   #articleAbou div {
     justify-content: space-evenly;
   }
+
+   #navAbou, #navPort, #navCont {
+    font-size: 25px;
+   }
+   
+   .fa {
+    font-size: 25px;
+  }
+  #buttonCont {
+    width: 80%;
+    font-size: 25px;
+  }
+  #fullName, #email, #message {
+    font-size: 20px;
+    width: auto;
+  }
+  #articleCont form{
+    margin: 0px;
+  }
+  #articleCont form p label{
+    font-size: 25px;
+  }
+  #articlePort div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
+
+
+/* Small devices 768px */
+ @media screen and (max-width: 768px) {  
+
+  #navAbou, #navPort, #navCont {
+  display: block;
+ }
+
+  #articleAbou div {
+   flex-direction: column;
+   text-align: center;
+  }
+  header {
+      position: relative;
+  }
+  #timeBox {
+    display: none;
+  }
+
+}
+
