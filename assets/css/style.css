@@ -138,7 +138,7 @@ aside h1 {
 
 .linkTo {
   display: inline-flex;
-  padding: 10px;
+  padding: 17px;
   margin-left: 20px;
   background-color: var(--backColor1);
   font-size: 16px;
@@ -291,6 +291,13 @@ background-color: var(--backColor3);
 
 /*               Large devices  992px */
 @media screen and (max-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #navName h1 {
+    font-size: 2rem;
+  }
 
   #timeBox {
     top: -80px;
@@ -303,10 +310,7 @@ background-color: var(--backColor3);
   #sectionCont {
     text-align: center;
   }
-  #buttonCont {
-    margin-left: 5px;
-  }
-
+ 
   header {
     display: block;
     text-align: center;
@@ -367,28 +371,30 @@ background-color: var(--backColor3);
   }
 
    #navAbou, #navPort, #navCont {
-    font-size: 25px;
+    font-size: xx-large;
    }
    
    .fa {
-    font-size: 25px;
+    font-size: x-large;
   }
   #buttonCont {
+    margin-left: 5px;
+    height: 50px;
     width: 50%;
-    font-size: 25px;
+    font-size: xx-large;
   }
   #fullName, #email, #message {
-    font-size: 20px;
+    font-size: xx-large;
     width: 50%;
   }
   #articleCont form{
     margin: 0px;
   }
   #articleCont form p label{
-    font-size: 25px;
+    font-size: xx-large;
   }
   footer div p {
-    font-size: 25px;
+    font-size: xx-large;
   }
 }
 
@@ -419,7 +425,7 @@ background-color: var(--backColor3);
   }
   #buttonCont {
     width: 80%;
-    min-height: 40px;
+    min-height: 50px;
     height: auto;
   }
   #fullName, #email, #message {
