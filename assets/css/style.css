@@ -295,16 +295,12 @@ background-color: var(--backColor3);
     font-size: 3rem;
   }
 
-  header {
-    position: relative;
-  }
-
-  #navName h1 {
+   #navName h1 {
     font-size: 2rem;
   }
 
   #timeBox {
-    top: -150px;
+    top: -75px;
     left: 10%;
     width: 300px;
     height: 170px;
@@ -316,9 +312,11 @@ background-color: var(--backColor3);
   }
  
   header {
+    position: relative;
     display: block;
     text-align: center;
     margin-left: 0px;
+    height: 114px;
   }
 
   nav ul {
@@ -338,7 +336,7 @@ background-color: var(--backColor3);
   }
 
   main, footer {
-    top: 400px;
+    top: 305px;
   }
 
   #asideAbou, #asidePort, #asideCont {
@@ -407,8 +405,8 @@ background-color: var(--backColor3);
  @media screen and (max-width: 768px) {  
 
   #navAbou, #navPort, #navCont {
-  display: block;
- }
+    display: block;
+  }
 
   #articleAbou div {
    flex-direction: column;
@@ -418,18 +416,22 @@ background-color: var(--backColor3);
   #timeBox {
     display: none;
   }
+
   .topBackPic {
     height: 0;
     background-image: none;
   }
+
   main, footer {
-    top: 0px;
+    top: 80px;
   }
+
   #buttonCont {
     width: 80%;
     min-height: 50px;
     height: auto;
   }
+
   #fullName, #email, #message {
     width: 80%;
   }
