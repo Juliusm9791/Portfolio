@@ -18,13 +18,7 @@ The following picture shows web application:
 ![Mock-Up image](./assets/images/mock-up2.jpg)
 
 ## Technologies used
-Java Script
-
-HTML
-
-CSS
-
-API
+Java Script, HTML, CSS, API's
 
 #### CSS reset file
 
