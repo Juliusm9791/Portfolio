@@ -295,7 +295,7 @@ background-color: var(--backColor3);
     font-size: 3rem;
   }
 
-   #navName h1 {
+  #navName h1 {
     font-size: 2rem;
   }
 
@@ -364,6 +364,7 @@ background-color: var(--backColor3);
     border-bottom: 20px solid var(--backColor3);
     border-right: none;
   }
+
   #articlePort {
     justify-content: space-evenly;
   }
@@ -372,29 +373,34 @@ background-color: var(--backColor3);
     justify-content: space-evenly;
   }
 
-   #navAbou, #navPort, #navCont {
+  #navAbou, #navPort, #navCont {
     font-size: xx-large;
-   }
+  }
    
-   .fa {
+  .fa {
     font-size: x-large;
   }
+
   #buttonCont {
     margin-left: 5px;
     height: 50px;
     width: 50%;
     font-size: xx-large;
   }
+
   #fullName, #email, #message {
     font-size: xx-large;
     width: 50%;
   }
+
   #articleCont form{
     margin: 0px;
   }
+
   #articleCont form p label{
     font-size: xx-large;
   }
+
   footer div p {
     font-size: x-large;
   }
