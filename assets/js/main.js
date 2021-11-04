@@ -11,14 +11,14 @@ $.ajax({
 
 function linksToPages(response) {
   for (let i = 0; i < requestUrl.length; i++) {
-    if (response[i].name !== "Portfolio" && response[i].name !== "prework-about-me" && response[i].name !== "Readme_Generator" && response[i].name !== "Team_Profile_Generator" && response[i].name !== "Team_Profile_Generator_HTML") {
+    if (response[i].name !== "Portfolio" && response[i].name !== "prework-about-me" && response[i].name !== "Readme_Generator" && response[i].name !== "Team_Profile_Generator" && response[i].name !== "Team_Profile_Generator_HTML" && response[i].name !== "Note_Taker") {
       let div = $('<div>');
       let titleName = fixTitleName(response[i].name);
       let imageLink =  `./assets/images/${response[i].name}.jpg`;
       let image = new Image();
       image.src = imageLink;
       image.alt = titleName;
-      console.log(response[i].html_url)
+      //console.log(response[i].html_url)
       div.append($(`<a href="https://juliusm9791.github.io/${response[i].name}/" target="_blank"></a>`).append(image)); 
       div.append($(`<a class="fa titleName" href="${response[i].html_url}" target="_blank">&#xf09b ${titleName}</a>`));
       $('#articlePort').append(div);
