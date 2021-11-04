@@ -295,6 +295,10 @@ background-color: var(--backColor3);
     font-size: 3rem;
   }
 
+  header {
+    position: relative;
+  }
+
   #navName h1 {
     font-size: 2rem;
   }
@@ -410,9 +414,7 @@ background-color: var(--backColor3);
    flex-direction: column;
    text-align: center;
   }
-  header {
-      position: relative;
-  }
+  
   #timeBox {
     display: none;
   }
