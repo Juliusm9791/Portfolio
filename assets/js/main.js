@@ -11,17 +11,24 @@ $.ajax({
 
 function linksToPages(response) {
   for (let i = 0; i < requestUrl.length; i++) {
-    if (response[i].name !== "Portfolio" && response[i].name !== "prework-about-me" && response[i].name !== "Readme_Generator" && response[i].name !== "Team_Profile_Generator" && response[i].name !== "Team_Profile_Generator_HTML" && response[i].name !== "Note_Taker" && response[i].name !== "Employee_Tracker" && response[i].name !== "E-Commerce" && response[i].name !== "Developers_Tech_Blog" && response[i].name !== "Pet_Adopt") {
+    if (response[i].name !== "Portfolio" && response[i].name !== "prework-about-me" && response[i].name !== "Readme_Generator" && response[i].name !== "Team_Profile_Generator" && response[i].name !== "Team_Profile_Generator_HTML" && response[i].name !== "Note_Taker" && response[i].name !== "Employee_Tracker" && response[i].name !== "E-Commerce") {
       let div = $('<div>');
       let titleName = fixTitleName(response[i].name);
-      let imageLink =  `./assets/images/${response[i].name}.jpg`;
+      let imageLink = `./assets/images/${response[i].name}.jpg`;
       let image = new Image();
       image.src = imageLink;
       image.alt = titleName;
       //console.log(response[i].html_url)
-      div.append($(`<a href="https://juliusm9791.github.io/${response[i].name}/" target="_blank"></a>`).append(image)); 
+      if (response[i].name === "Developers_Tech_Blog") {
+        div.append($(`<a href=https://arcane-savannah-67787.herokuapp.com/ target="_blank"></a>`).append(image));
+      } else if (response[i].name === "Pet_Adopt") {
+        div.append($(`<a href=https://evening-earth-50473.herokuapp.com/ target="_blank"></a>`).append(image));
+      } else {
+        div.append($(`<a href="https://juliusm9791.github.io/${response[i].name}/" target="_blank"></a>`).append(image));
+      }
       div.append($(`<a class="fa titleName" href="${response[i].html_url}" target="_blank">&#xf09b ${titleName}</a>`));
       $('#articlePort').append(div);
+
     }
   }
 }
@@ -29,9 +36,9 @@ function linksToPages(response) {
 function fixTitleName(title) {
   title = title.toLowerCase()
   let titleSplit = title.split("_");
-    for (let i = 0; i < titleSplit.length; i++) {
-      titleSplit[i] = titleSplit[i].charAt(0).toUpperCase() + titleSplit[i].slice(1);
-    }
+  for (let i = 0; i < titleSplit.length; i++) {
+    titleSplit[i] = titleSplit[i].charAt(0).toUpperCase() + titleSplit[i].slice(1);
+  }
   title = titleSplit.join(" ")
   return title;
 }
