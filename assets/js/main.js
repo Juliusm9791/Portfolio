@@ -11,17 +11,7 @@ $.ajax({
 
 function linksToPages(response) {
 
-  let div = $('<div>');
-  let titleName = "Fly-app";
-  let imageLink = `./assets/images/fly-app.jpg`;
-  let image = new Image();
-  image.src = imageLink;
-  image.alt = titleName;
-  //console.log(response[i].html_url)
-  div.append($(`<a href=https://fly--app.herokuapp.com/ target="_blank"></a>`).append(image));
-  div.append($(`<a class="fa titleName" href=https://github.com/djdyer/fly-app target="_blank">&#xf09b Fly-app</a>`));
-  $('#articlePort').append(div);
-
+  console.log(response)
   for (let i = 0; i < requestUrl.length; i++) {
     if (response[i].name !== "Portfolio" && response[i].name !== "prework-about-me" && response[i].name !== "Readme_Generator" && response[i].name !== "Team_Profile_Generator" && response[i].name !== "Team_Profile_Generator_HTML" && response[i].name !== "Note_Taker" && response[i].name !== "Employee_Tracker" && response[i].name !== "E-Commerce" && response[i].name !== "Social_Network_API" && response[i].name !== "Text_Editor" && response[i].name !== "Book_Search_Engine" && response[i].name !== "Redux_Store") {
       let div = $('<div>');
@@ -30,15 +20,8 @@ function linksToPages(response) {
       let image = new Image();
       image.src = imageLink;
       image.alt = titleName;
-      //console.log(response[i].html_url)
-      if (response[i].name === "Developers_Tech_Blog") {
-        div.append($(`<a href=https://arcane-savannah-67787.herokuapp.com/ target="_blank"></a>`).append(image));
-      } else if (response[i].name === "Pet_Adopt") {
-        div.append($(`<a href=https://evening-earth-50473.herokuapp.com/ target="_blank"></a>`).append(image));
-      } else {
-        div.append($(`<a href="https://juliusm9791.github.io/${response[i].name}/" target="_blank"></a>`).append(image));
-      }
-      div.append($(`<a class="fa titleName" href="${response[i].html_url}" target="_blank">&#xf09b ${titleName}</a>`));
+      div.append($(`<a href=${response[i].homepage} target="_blank"></a>`).append(image));
+      div.append($(`<a class="fa titleName" href=${response[i].html_url} target="_blank">&#xf09b ${titleName}</a>`));
       $('#articlePort').append(div);
 
     }
