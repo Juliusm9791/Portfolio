@@ -42,5 +42,5 @@ $('#resume').on("click", openPDF)
 
 function openPDF() {
   var myWindow = window.open("", "_blank");
-  myWindow.document.write('<title>Julius resume</title><iframe src="./assets/pdf/Julius_Markauskas_resume_s.pdf" width="100%" height="100%"></iframe>');
+  myWindow.document.write('<title>Julius resume</title><iframe src="./assets/pdf/Julius_Markauskas_resume.pdf" width="100%" height="100%"></iframe>');
 }
