@@ -1,5 +1,6 @@
 var requestUrl = 'https://api.github.com/users/juliusm9791/repos';
 
+const ignoreList = ["Portfolio", "prework-about-me", "Readme_Generator", "Team_Profile_Generator", "Team_Profile_Generator_HTML", "Note_Taker", "Employee_Tracker", "E-Commerce", "Social_Network_API", "Text_Editor", "Book_Search_Engine", "Redux_Store", "tech-news-java-api", "News-python", "My-School"]
 // JQuery AJAX
 $.ajax({
   url: requestUrl,
@@ -13,7 +14,7 @@ function linksToPages(response) {
 
   console.log(response)
   for (let i = 0; i < requestUrl.length; i++) {
-    if (response[i].name !== "Portfolio" && response[i].name !== "prework-about-me" && response[i].name !== "Readme_Generator" && response[i].name !== "Team_Profile_Generator" && response[i].name !== "Team_Profile_Generator_HTML" && response[i].name !== "Note_Taker" && response[i].name !== "Employee_Tracker" && response[i].name !== "E-Commerce" && response[i].name !== "Social_Network_API" && response[i].name !== "Text_Editor" && response[i].name !== "Book_Search_Engine" && response[i].name !== "Redux_Store" && response[i].name !== "tech-news-java-api" && response[i].name !== "News-python") {
+    if (!ignoreList.includes(response[i].name)) {
       let div = $('<div>');
       let titleName = fixTitleName(response[i].name);
       let imageLink = `./assets/images/${response[i].name}.jpg`;
