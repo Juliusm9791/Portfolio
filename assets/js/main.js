@@ -1,6 +1,6 @@
 var requestUrl = 'https://api.github.com/users/juliusm9791/repos';
 
-const ignoreList = ["Portfolio", "prework-about-me", "Readme_Generator", "Team_Profile_Generator", "Team_Profile_Generator_HTML", "Note_Taker", "Employee_Tracker", "E-Commerce", "Social_Network_API", "Text_Editor", "Book_Search_Engine", "Redux_Store", "tech-news-java-api", "News-python", "My-School"]
+const ignoreList = ["Portfolio", "prework-about-me", "Readme_Generator", "Team_Profile_Generator", "Team_Profile_Generator_HTML", "Note_Taker", "Employee_Tracker", "E-Commerce", "Social_Network_API", "Text_Editor", "Book_Search_Engine", "Redux_Store", "tech-news-java-api", "News-python"]
 // JQuery AJAX
 $.ajax({
   url: requestUrl,
